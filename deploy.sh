@@ -12,5 +12,5 @@ docker push johnywind2015/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=johnywind2015/multi-server:$SHA
-kubectl set image deployments/client-deployment server=johnywind2015/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=johnywind2015/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=johnywind2015/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=johnywind2015/multi-worker:$SHA
